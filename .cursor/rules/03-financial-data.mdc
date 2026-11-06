@@ -1,0 +1,12 @@
+---
+description: Data modelling and financial calculations
+alwaysApply: false
+---
+- Inspect current models and migrations before schema changes.
+- Persist money using integer minor units or the project's established exact decimal representation.
+- Keep dates and local display/time-zone handling consistent.
+- Keep recurring schedules distinct from received/paid transactions where the model supports it.
+- Store income category separately from the user-entered income source/name.
+- Savings progress is based only on recorded contributions.
+- Make month boundaries explicit and test month/year transitions.
+- Use the existing migration mechanism; preserve user data.

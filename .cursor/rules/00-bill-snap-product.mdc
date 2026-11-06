@@ -1,0 +1,14 @@
+---
+description: Bill Snap product context, UX principles, and financial correctness
+alwaysApply: true
+---
+- Read `/AGENTS.md` before product or architecture changes.
+- Preserve the existing stack. Inspect before coding; do not scaffold a replacement app.
+- Use the supplied root-level reference images as guidance; inspect them before UI changes.
+- Follow the calm dark forest-green direction with restrained accents, readable contrast, and breathing room.
+- Keep labels and interactions consistent across flows. Bottom sheets need clear titles, concise descriptions, obvious actions, and accessible dismissal.
+- Add Income and Start Saving are Home quick actions, not bottom-nav tabs.
+- Never describe recorded surplus as bank balance or unrecorded savings as saved money.
+- Do not imply bank sync, automatic transaction detection, or cloud sync unless implemented.
+- Include validation, loading, empty, error, and success states as appropriate.
+- Do not add unapproved features.

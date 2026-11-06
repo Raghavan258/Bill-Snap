@@ -1,0 +1,13 @@
+---
+description: Coding standards and safe implementation
+alwaysApply: true
+---
+- Follow existing naming, formatting, architecture, and folder conventions.
+- Prefer small components and clear responsibilities.
+- Reuse existing navigation, form, validation, persistence, and styling patterns.
+- Avoid `any`, unsafe casts, duplicated constants, dead code, and unnecessary dependencies.
+- Handle async operations and errors explicitly.
+- Ensure controls have accessible labels, suitable touch targets, and visible interaction states.
+- Never silence compiler, lint, or test errors to make a build appear successful.
+- Do not replace working functionality with mock data or static UI.
+- Add tests for business logic and critical user journeys.

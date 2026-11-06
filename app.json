@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "Bill Snap",
+    "slug": "bill-snap",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "billsnap",
+    "backgroundColor": "#0C1210",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.billsnap.app"
+    },
+    "android": {
+      "package": "com.billsnap.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#0C1210",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_EXTERNAL_STORAGE"
+      ],
+      "softwareKeyboardLayoutMode": "resize",
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "./plugins/withAndroidBuild",
+      "expo-router",
+      "expo-sqlite",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Bill Snap uses your photos so you can upload a bill or receipt.",
+          "cameraPermission": "Bill Snap uses the camera to photograph a bill or receipt."
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": { "minSdkVersion": 24 },
+          "ios": { "deploymentTarget": "16.4" }
+        }
+      ],
+      "expo-mlkit-ocr",
+      "@react-native-community/datetimepicker"
+    ]
+  }
+}

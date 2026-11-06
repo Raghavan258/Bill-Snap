@@ -1,0 +1,11 @@
+---
+description: Implement UI from Bill Snap reference images
+alwaysApply: false
+---
+1. Locate and inspect all relevant reference images in the project root.
+2. Identify the screens, order, labels, actions, and form fields they depict.
+3. Derive reusable tokens from the images and existing code: surfaces, text, accent, spacing, radii, typography, borders, icons.
+4. Translate the concept into the existing platform's native patterns; do not reproduce phone frames, generated-image artefacts, or misspelled text.
+5. Prioritise hierarchy, legibility, breathing room, safe areas, keyboard behaviour, and scrolling.
+6. Reuse shared tokens/components rather than hard-coding near-duplicate values.
+7. If an image conflicts with `/AGENTS.md`, follow the product decisions and report the conflict.
