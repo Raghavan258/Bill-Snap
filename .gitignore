@@ -39,3 +39,7 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# On-device OCR text from the local evaluation harness
+/docs/real-image-pipeline-output.json
+/docs/real-image-pipeline-summary.json

@@ -1,0 +1,87 @@
+{
+  "inspectedAt": "2026-11-06",
+  "requested": {
+    "bills": "test-dataset/bills",
+    "nonBills": "test-dataset/non-bills",
+    "expectedCount": 20,
+    "present": false
+  },
+  "located": {
+    "directory": "test_dataset",
+    "note": "The requested test-dataset/bills and test-dataset/non-bills folders are not in the project. These eight JPEGs are the only receipt images present. Originals were not modified."
+  },
+  "images": [
+    {
+      "fileName": "WhatsApp Image 2026-11-04 at 10.43.51 PM.jpeg",
+      "relativePath": "test_dataset/WhatsApp Image 2026-11-04 at 10.43.51 PM.jpeg",
+      "format": "jpeg",
+      "bytes": 146868,
+      "width": 899,
+      "height": 1599,
+      "readable": true
+    },
+    {
+      "fileName": "WhatsApp Image 2026-11-05 at 10.10.59 AM.jpeg",
+      "relativePath": "test_dataset/WhatsApp Image 2026-11-05 at 10.10.59 AM.jpeg",
+      "format": "jpeg",
+      "bytes": 127310,
+      "width": 1200,
+      "height": 1600,
+      "readable": true
+    },
+    {
+      "fileName": "WhatsApp Image 2026-11-05 at 10.11.00 AM.jpeg",
+      "relativePath": "test_dataset/WhatsApp Image 2026-11-05 at 10.11.00 AM.jpeg",
+      "format": "jpeg",
+      "bytes": 136894,
+      "width": 1200,
+      "height": 1600,
+      "readable": true
+    },
+    {
+      "fileName": "WhatsApp Image 2026-11-05 at 10.11.03 AM.jpeg",
+      "relativePath": "test_dataset/WhatsApp Image 2026-11-05 at 10.11.03 AM.jpeg",
+      "format": "jpeg",
+      "bytes": 142250,
+      "width": 1600,
+      "height": 1200,
+      "readable": true
+    },
+    {
+      "fileName": "WhatsApp Image 2026-11-05 at 10.11.05 AM.jpeg",
+      "relativePath": "test_dataset/WhatsApp Image 2026-11-05 at 10.11.05 AM.jpeg",
+      "format": "jpeg",
+      "bytes": 111645,
+      "width": 1200,
+      "height": 1600,
+      "readable": true
+    },
+    {
+      "fileName": "WhatsApp Image 2026-11-05 at 10.11.06 AM.jpeg",
+      "relativePath": "test_dataset/WhatsApp Image 2026-11-05 at 10.11.06 AM.jpeg",
+      "format": "jpeg",
+      "bytes": 77972,
+      "width": 1200,
+      "height": 1600,
+      "readable": true
+    },
+    {
+      "fileName": "WhatsApp Image 2026-11-05 at 10.11.08 AM.jpeg",
+      "relativePath": "test_dataset/WhatsApp Image 2026-11-05 at 10.11.08 AM.jpeg",
+      "format": "jpeg",
+      "bytes": 83931,
+      "width": 1200,
+      "height": 1600,
+      "readable": true
+    },
+    {
+      "fileName": "WhatsApp Image 2026-11-05 at 9.59.52 PM.jpeg",
+      "relativePath": "test_dataset/WhatsApp Image 2026-11-05 at 9.59.52 PM.jpeg",
+      "format": "jpeg",
+      "bytes": 355261,
+      "width": 900,
+      "height": 1600,
+      "readable": true
+    }
+  ]
+}

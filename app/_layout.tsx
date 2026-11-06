@@ -1,6 +1,7 @@
-import { Stack } from 'expo-router';
+import { Stack, useRouter } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect, useState } from 'react';
+import { DEV_OCR_EVAL } from '../src/dev/evalAutostart';
 import { ActivityIndicator, Text, View } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { getDb } from '../src/data/db';
@@ -38,7 +39,20 @@ export default function RootLayout() {
 }
 
 function AppStack() {
-  return <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: colors.bg } }} />;
+  return (
+    <>
+      {__DEV__ && DEV_OCR_EVAL ? <EvalRedirect /> : null}
+      <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: colors.bg } }} />
+    </>
+  );
+}
+
+function EvalRedirect() {
+  const router = useRouter();
+  useEffect(() => {
+    router.replace('/dev/ocr-eval');
+  }, [router]);
+  return null;
 }
 
 function Boot({ state }: { state: 'loading' | 'error' }) {

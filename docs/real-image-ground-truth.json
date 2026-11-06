@@ -1,0 +1,79 @@
+{
+  "method": "Independent visual inspection of the original files. Not ML Kit output and not a pipeline prediction.",
+  "moneyUnit": "integer paise",
+  "categoryRule": "Food, Utilities, or Groceries when the visible text supports one of those app categories. Others when the receipt is clearly outside those three. Uncertain when the visible text does not decide it.",
+  "images": [
+    {
+      "fileName": "WhatsApp Image 2026-11-04 at 10.43.51 PM.jpeg",
+      "expectedClass": "bill",
+      "merchant": { "state": "readable", "value": "PNB Pony Salons" },
+      "date": { "state": "uncertain", "value": null, "visible": "Handwritten 4/11/26. Day and month are both plausible." },
+      "amountMinor": { "state": "uncertain", "value": null, "visible": "Handwritten total. The digits are not clear enough to fix a payable amount." },
+      "category": { "state": "readable", "value": "Others", "reason": "Salon cash bill. Not Food, Utilities, or Groceries." },
+      "notes": "Printed cash bill for PNB Pony Salons, Visakhapatnam. Service lines and the total are handwritten."
+    },
+    {
+      "fileName": "WhatsApp Image 2026-11-05 at 10.10.59 AM.jpeg",
+      "expectedClass": "bill",
+      "merchant": { "state": "uncertain", "value": null, "visible": "Store header is cropped out of the frame." },
+      "date": { "state": "uncertain", "value": null, "visible": "No date is visible in the crop." },
+      "amountMinor": { "state": "uncertain", "value": null, "visible": "PAYTM Amt and one OUR TOTAL print 93.00. Another OUR TOTAL prints 93.20." },
+      "category": { "state": "uncertain", "value": null, "reason": "Retail lines are visible, but the store type is not." },
+      "notes": "Lower portion of a GST retail receipt. Payable figure conflicts between 93.00 and 93.20."
+    },
+    {
+      "fileName": "WhatsApp Image 2026-11-05 at 10.11.00 AM.jpeg",
+      "expectedClass": "bill",
+      "merchant": { "state": "uncertain", "value": null, "visible": "Merchant header is cropped out." },
+      "date": { "state": "readable", "value": "2026-04-24", "visible": "24-04-26 21:33. 24 cannot be a month, so this is 24 April 2026." },
+      "amountMinor": { "state": "readable", "value": 151600, "visible": "Total and CARD both print Rs 1,516.00." },
+      "category": { "state": "readable", "value": "Others", "reason": "Hair accessories and similar goods, not Food, Utilities, or Groceries." },
+      "notes": "Itemised tax invoice, top of the slip cut off. Footer says exchange within 7 days."
+    },
+    {
+      "fileName": "WhatsApp Image 2026-11-05 at 10.11.03 AM.jpeg",
+      "expectedClass": "bill",
+      "merchant": { "state": "uncertain", "value": null, "visible": "Merchant name is outside the frame." },
+      "date": { "state": "uncertain", "value": null, "visible": "No date is visible." },
+      "amountMinor": { "state": "uncertain", "value": null, "visible": "MRP, saving, and after-discount figures are rotated and partly unclear. A single payable was not fixed." },
+      "category": { "state": "uncertain", "value": null, "reason": "Soap and room freshener are visible, without a store type." },
+      "notes": "Rotated crop of a discount receipt. YOUR SAVING 147.00 is readable. The payable line is not reliable enough to score."
+    },
+    {
+      "fileName": "WhatsApp Image 2026-11-05 at 10.11.05 AM.jpeg",
+      "expectedClass": "bill",
+      "merchant": { "state": "uncertain", "value": null, "visible": "Merchant name is cropped. Bill No. 8682 is partly visible." },
+      "date": { "state": "uncertain", "value": null, "visible": "No date is visible in the crop." },
+      "amountMinor": { "state": "readable", "value": 3200, "visible": "Grand Total ₹32.00. Subtotal 30.00, CGST 0.75, SGST 0.75, round off +0.50." },
+      "category": { "state": "readable", "value": "Food", "reason": "The visible item is Adrak Tea." },
+      "notes": "Cafe-style bill held in a hand. Top of the slip, including the merchant, is out of frame."
+    },
+    {
+      "fileName": "WhatsApp Image 2026-11-05 at 10.11.06 AM.jpeg",
+      "expectedClass": "bill",
+      "merchant": { "state": "uncertain", "value": null, "visible": "Merchant name is not readable." },
+      "date": { "state": "uncertain", "value": null, "visible": "A blue stamp is present and not readable." },
+      "amountMinor": { "state": "uncertain", "value": null, "visible": "One GRAND TOTAL prints 188.0 and another prints 188.1." },
+      "category": { "state": "readable", "value": "Food", "reason": "The slip labels Total Amount (Food)." },
+      "notes": "Blurry, low-contrast food-order bill. The payable is too close between 188.00 and 188.10 to choose one."
+    },
+    {
+      "fileName": "WhatsApp Image 2026-11-05 at 10.11.08 AM.jpeg",
+      "expectedClass": "bill",
+      "merchant": { "state": "uncertain", "value": null, "visible": "Merchant name is cropped." },
+      "date": { "state": "uncertain", "value": null, "visible": "No date is visible." },
+      "amountMinor": { "state": "uncertain", "value": null, "visible": "2615.00 is printed under 2490.00 and two 62.28 lines, but the total label is not in frame." },
+      "category": { "state": "readable", "value": "Food", "reason": "Visible items include naan, Punjabi tadka, and matar pulao." },
+      "notes": "Angled restaurant bill. 2490.00 + 62.28 + 62.28 rounds to 2615, but the label for 2615.00 is not visible, so the payable stays Uncertain."
+    },
+    {
+      "fileName": "WhatsApp Image 2026-11-05 at 9.59.52 PM.jpeg",
+      "expectedClass": "bill",
+      "merchant": { "state": "readable", "value": "Dua Lima Retail Pvt." },
+      "date": { "state": "uncertain", "value": null, "visible": "05-11-26 21:04. Both 05 and 11 can be the month, and the slip does not name the format." },
+      "amountMinor": { "state": "readable", "value": 63900, "visible": "Total and the approval line print Rs 639.00. TOTAL SAVED Rs 476.00 is not the payable." },
+      "category": { "state": "readable", "value": "Others", "reason": "Stationery and similar goods, not Food, Utilities, or Groceries." },
+      "notes": "Tax invoice. Address block names Abhiram TS Imperio; the header merchant is Dua Lima Retail Pvt."
+    }
+  ]
+}
